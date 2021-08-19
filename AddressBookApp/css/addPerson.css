@@ -123,3 +123,60 @@ body {
     text-align: left;
 }
 
+.row-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:  20px;
+    margin-top: 20px;
+    border: 0px sold green;
+    padding-bottom: 10px;
+}
+
+.label {
+    min-width: 0px;
+}
+
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font: normal normal normal 16px Roboto;   
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc ;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 14px Roboto;
+}
+
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 14px Roboto;
+    color: #42515F;
+    background-color: transparent;
+    display:flex;
+    flex-direction: row;
+    box-sizing:border-box;
+    opacity: 1;
+    padding-right: 160px;
+}
+#state{
+    margin-left: 20px;
+}
+.input-code {
+    width:35%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    padding-right:160px;
+    margin-left: 20px;
+    font: normal normal normal 14px Roboto;
+}
