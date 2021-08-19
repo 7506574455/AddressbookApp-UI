@@ -1,4 +1,4 @@
-<!--UC1-->
+<!--UC3-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,29 +6,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/addPerson.css">
+    <script type="text/javascript" src="/js/addressBook.js"></script>
+    
     <title>Address Book</title>
 </head>
+
 <body>
     <header class="header-content header">
         <div class="logo-content">
-            <img src="/assets/logo.png" alt="logo">
+            <img src="/assets/addressbook.jpeg" alt="logo">
             <div>
                 <span class="per-text"> ADDRESS</span><br>
                 <span class="per-text per-address"> BOOK</span>
             </div>
         </div>
-    </header> 
+    </header>
     <div class="form-content">
         <form class="form " action="#" onsubmit="save();">
             <div class="form-head">
                 <div class="heading">PERSON ADDRESS FORM</div>
                 <div class="cancelButton">
+                    
                     <img src="/assets/cancel.jpeg">
                     </a>
                 </div>
-            </div>  
+            </div>
+            <div class="row-content">
+                <label for="name" class="label text"></label>
+                <input type="text" class="input" id="name" name="name" placeholder="Full Name.." required>
+                <error-output for="text" class="text-error"></error-output>
+            </div>
+            <div class="row-content">
+                <label for="address" class="label text"></label>
+                <input type="textarea" class="input" id="address" name="address" placeholder="Address.." required
+                    style="height: 100px;">
+                <error-output for="text" class="address-error"></error-output>
+            </div>
+            <div class="row-content city-state-zip">
+                <select id="city" name="city">
+                        <option>Select City</option>
+                        <option value="Anagar">Anagar</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Pune">Pune</option>                    
+                    </select>
+                    <select id="state" name="state">
+                        <option>Select State</option>
+                        <option value="Maharastra">Maharastra</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                    </select>
+                    <input type="text" class="input-code" id="zipcode" name="zipcode" placeholder="Zip Code.." required>
+                    <error-output for="zipcode" class="zip-error"></error-output>
+                </div>
+            
+            <div class="row-content">
+                <label for="number" class="label text"></label>
+                <input type="text" class="input" id="number" name="number" placeholder="Phone Number..">
+                <error-output for="number" class="number-error"></error-output>
+            </div>
+      
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
+
